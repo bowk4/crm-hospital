@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step-Project-Card</title>
+
+    <!--========== STYLE ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/button.css">
+
+    <!--========== SCRIPTS ==========-->
+
+
+    <script type="module" src="scripts/classes/Modal.js" defer ></script>
+    <script type="module" src="scripts/classes/Visit.js" defer ></script>
+    <script type="module" src="index.js" defer></script>
+    <script type="module" src="scripts/classes/MainVisitDoctor.js" defer></script>
+    <script type="module" src="scripts/classes/VisitDentist.js" defer></script>
+    <script type="module" src="scripts/functions/LogOut.js" defer></script>
+    <script type="module" src="scripts/api/LoginAndShowCards.js" defer></script>
+    <script type="module" src="scripts/classes/EditModalCard.js" defer></script>
+    <script type="module" src="scripts/functions/Filter.js" defer></script>
+</head>
+<body>
+
+<div class="blur-wrapper"></div>
+<header>
+    <div class="header-wrapper">
+        <img class="logo-img" src="images/logo.png" alt="main-logo">
+    </div>
+    <p>You must be <span>healthy</span></p>
+    <div class="btn-wrapper">
+        <button id="addVisit" class="addVisit">Додати візит</button>
+        <button id="logOut" class="logOut">Вийти</button>
+    </div>
+
+
+</header>
+<section class="filter-section">
+    <div class="filter-wrapper">
+        <h1>Visit <b>Filter</b></h1>
+
+        <form id="visitFilterForm" class="filter-form">
+            <section class="search">
+                <label for="search">Пошук за <b>заголовком</b>/<b>вмістом</b> візиту :</label>
+                <input type="text" id="search" name="search" placeholder="Search">
+            </section>
+
+            <section class="status">
+                <label for="status">Пошук за <b>статусом</b> :</label>
+                <select id="status" name="status">
+                    <option value="All">All</option>
+                    <option value="Open">Open</option>
+                    <option value="Close">Close</option>
+                </select>
+            </section>
+
+            <section class="urgency">
+                <label for="selectUrgency"><b>Терміновість</b> візиту :</label>
+                <select id="selectUrgency" name="priority">
+                    <option selected  value="ALL">ALL</option>
+                    <option value="Терміново">Терміново</option>
+                    <option value="пріорітетна">пріорітетна</option>
+                    <option value="звичайна">звичайна</option>
+                </select>
+            </section>
+
+            <button type="button" id="btnSearch">Фільтрувати</button>
+        </form>
+    </div>
+</section>
+
+<main>
+    <p class="not-items">No items have been added</p>
+</main>
+
+</body>
+</html>

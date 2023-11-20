@@ -1,0 +1,11 @@
+{
+  "name": "project-cards",
+  "version": "1.0.0",
+  "description": "Build Yaroslav Kh. & Volodimir Sb. & Daniil St.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yaroslav Kh. & Volodimir Sb. & Daniil St.",
+  "license": "ISC"
+}

@@ -1,0 +1,83 @@
+button {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    border: 5px outset #ff0000;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    border: 5px outset #ff0000;
+    color: black;
+    background-color: red;
+    transition: 0.3s;
+}
+
+#btnOpen {
+    margin-right: 25px;
+}
+
+.btn-decline {
+    margin-top: 60px;
+}
+
+.btn-edit {
+    background-color: inherit;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: none;
+    box-shadow: -1px 3px 17px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 17px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 17px 5px rgba(0,0,0,0.75);
+}
+
+.btn-edit:hover {
+    border: none;
+    background-color: inherit;
+    box-shadow: -1px -1px 14px 8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -1px 14px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 14px 8px rgba(0,0,0,0.75);
+}
+
+.div-btn:hover {
+    box-shadow: -1px -1px 14px 8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -1px 14px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 14px 8px rgba(0,0,0,0.75);
+}
+
+.div-btn {
+    gap: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-btn:hover {
+    box-shadow: none;
+}
+
+.logOut{
+    display: none;
+    margin-right: 15px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-record_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

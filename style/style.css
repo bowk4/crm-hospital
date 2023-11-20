@@ -1,0 +1,199 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #262626;
+    margin: 0 25px;
+}
+
+header {
+    background-color: #0e0e0e;
+    box-shadow: -1px 10px 32px 19px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 32px 19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 32px 19px rgba(0, 0, 0, 0.75);
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 10px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+header p {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+header button {
+    margin-top: 12px;
+}
+
+header span {
+    color: red;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin-top: 30px;
+    place-items: start legacy;}
+
+.visit__main__card {
+    position: absolute;
+    z-index: 13;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visit__main__card form {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    padding: 40px 40px;
+    background-color: #313131;
+    box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 1px 30px 13px 13px rgba(0, 0, 0, 0.73);
+}
+
+.select-doctor {
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 1px 30px 13px 13px rgba(0, 0, 0, 0.73);
+    background-color: #313131;
+    padding: 40px 40px;
+}
+
+.filter-section {
+    display: none;
+}
+
+.filter-wrapper {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    color: white;
+    width: 98.5%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #0e0e0e;
+    box-shadow: -1px 10px 32px 19px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 32px 19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 32px 19px rgba(0, 0, 0, 0.75);
+}
+
+.filter-wrapper h1 {
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.filter-wrapper span {
+    color: red;
+}
+
+.filter-wrapper b {
+    color: red;
+}
+
+.select-doctor__wrapper {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 500px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.select-doctor__wrapper {
+    background-color: #212121;
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transform: translateY(5px);
+    box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 1px 30px 13px 13px rgba(0, 0, 0, 0.73);
+}
+
+.login-wrapper {
+    position: absolute;
+    z-index: 13;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 40px 40px;
+    background-color: #313131;
+    box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 1px 10px 13px 13px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 1px 30px 13px 13px rgba(0, 0, 0, 0.73);
+}
+
+.select-doctor {
+    position: absolute;
+    z-index: 13;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-visit__p {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+.open-stan {
+    border: none;
+    height: 20px;
+    background-color: inherit;
+    width: 56px;
+    position: relative;
+    top: -39px;
+}
+
+#search{
+    border: none;
+    width: 70%;
+}
+
+.not-items {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    margin-left: 40%;
+    top: 50%;
+    text-transform: uppercase;
+}
+
